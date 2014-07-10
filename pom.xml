@@ -7,7 +7,7 @@
     <version>1.0.0-SNAPSHOT</version>
     <name>calculator-service Jersey Webapp</name>
     <build>
-        <finalName>calculator-service</finalName>
+        <finalName>aditya</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -24,6 +24,13 @@
             </plugin>
         </plugins>
     </build>
+    <!-- Think you cannot hear me... -->
+    <!-- 
+    	These are my dependencies (by dependency you can understand: the .JAR files my project need...
+    	We are using RESTful APIs, they have to come from some place, from some resource, these resources are specified here as project dependencies...
+    	so jersey is the implementation of JAX-RS that we choosed to use. If could have been rest-easy, which is jboss, so the dependencies would be different ones, but
+    	the coding would change almost nothing...
+     -->
     <dependencies>
         <dependency>
             <groupId>com.sun.jersey</groupId>
@@ -41,24 +48,24 @@
             <version>4.8.2</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>com.sun.jersey</groupId>
-            <artifactId>jersey-client</artifactId>
-            <version>${jersey-version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish.distributions</groupId>
-            <artifactId>web-all</artifactId>
-            <version>10.0-build-20080430</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish.embedded</groupId>
-            <artifactId>gf-embedded-api</artifactId>
-            <version>1.0-alpha-4</version>
-            <scope>test</scope>
-        </dependency>
+<!--         <dependency> -->
+<!--             <groupId>com.sun.jersey</groupId> -->
+<!--             <artifactId>jersey-client</artifactId> -->
+<!--             <version>${jersey-version}</version> -->
+<!--             <scope>test</scope> -->
+<!--         </dependency> -->
+<!--         <dependency> -->
+<!--             <groupId>org.glassfish.distributions</groupId> -->
+<!--             <artifactId>web-all</artifactId> -->
+<!--             <version>10.0-build-20080430</version> -->
+<!--             <scope>test</scope> -->
+<!--         </dependency> -->
+<!--         <dependency> -->
+<!--             <groupId>org.glassfish.embedded</groupId> -->
+<!--             <artifactId>gf-embedded-api</artifactId> -->
+<!--             <version>1.0-alpha-4</version> -->
+<!--             <scope>test</scope> -->
+<!--         </dependency> -->
     </dependencies>
     <properties>
         <jersey-version>1.8</jersey-version>

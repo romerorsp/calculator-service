@@ -7,12 +7,12 @@
         <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
         <init-param>
             <param-name>com.sun.jersey.config.property.packages</param-name>
-            <param-value>war</param-value>
+            <param-value>in.com.aditya.service.calculator</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Jersey Web Application</servlet-name>
+        <servlet-name>Aditya's Calculator service</servlet-name>
 	<!-- I'm replacing the prefix here in order to be more intuitive... -->
 	<url-pattern>/calculator/*</url-pattern>
     </servlet-mapping>
